@@ -1,0 +1,23 @@
+# Comandos ejecutados
+
+git config --global user.name "Pedro Matias Spergge"
+git config --global user.email "pmatiasspergge@gmail.com"
+git config --global color.ui auto
+
+mkdir AprendiendoGit
+cd AprendiendoGit
+git init
+
+echo "Git Fundamentos" > Readme.md
+git status
+git add Readme.md
+git status
+code .
+echo "2025-04-07" >> Readme.md
+git commit -m "Fecha"
+
+echo "<!DOCTYPE html>..." > index.html
+git add index.html
+git commit -m "Se agrega index.html con encabezado HTML"
+
+git log --oneline
